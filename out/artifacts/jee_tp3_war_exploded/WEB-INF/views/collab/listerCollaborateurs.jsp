@@ -1,4 +1,4 @@
-<%@ page import="java.util.List" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: salle
   Date: 10/10/2019
@@ -11,19 +11,9 @@
 <head>
     <meta charset="UTF-8">
     <title>SGP - App</title>
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap-4.3.1-dist/css/bootstrap.css">
 </head>
 <body>
-<h1>Les collaborateurs</h1>
-<ul>
-    <%
-        List<String> listeNoms = (List<String>) request.getAttribute("listeNoms");
-        for (String nom : listeNoms) {
-    %>
-    <li><%= nom %>
-    </li>
-    <%
-        }
-    %>
-</ul>
+    <h1>Liste des collaborateurs</h1>
 </body>
 </html>
